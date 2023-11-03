@@ -1,0 +1,122 @@
+body {
+    font-family: "Hannari";
+    min-height: 100vh;
+    max-width: 600px;
+    background-color: papayawhip; 
+    margin: 0 auto;
+    
+}
+
+.gameTitle{
+    margin: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.result{
+    font-size: 24px;
+    font-weight: bold;
+   
+}
+
+
+button{
+    display: inline-block; /* ボタンを横に並べる */
+    margin: 0 10px; /* 左右に10pxの間隔を開ける */
+    padding: 10px 20px; /* ボタンの内側の余白を設定 */
+    background-color: #3498db; /* 背景色を指定 */
+    color: #fff; /* テキストの色を指定 */
+    border: none; /* ボーダーを削除 */
+    border-radius: 5px; /* ボタンの角を丸くする */
+    font-size: 16px; /* フォントサイズを指定 */
+    cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+button:hover {
+	top:-3px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+    text-align: center; /* ボタンを水平方向に中央に配置 */
+}
+
+.button-container-right{
+    display: flex;
+    justify-content: right; /* 水平方向の中央寄せ */
+    margin: 30px;
+}
+
+.pics{
+    position: relative;
+    display: flex;
+    height:200px;
+    justify-content: center; /* 画像を水平中央に配置 */
+    align-items: center; /* 画像を垂直中央に配置 */
+    margin: 10px;
+}
+
+.pics img {
+    width: auto; /* 幅を自動調整 */
+    height: 100%; /* 高さを親要素に合わせる */
+  }
+
+.bg-pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+
+.pic-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* 子要素を親要素に合わせる */
+    height: 100%; /* 子要素を親要素に合わせる */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic {
+    z-index: 2; /* 上に配置する画像を最前面に配置 */
+    width: 50%; /* 子要素を親要素に合わせる */
+    height: 80%; /* 子要素を親要素に合わせる */
+}
+
+
+
+.half-size-img {
+
+    width: 50vw; /* ビューポート幅の50%に設定 */
+    max-width: 100%; /* 最大幅を100%に設定して画像のアスペクト比を保持 */
+}
+
+/* 画像を中央に配置するためのスタイル */
+.center-img {
+    display: flex;
+    align-items: center; /* 垂直方向の中央寄せ */
+    justify-content: center; /* 水平方向の中央寄せ */
+    height: 100vh; /* ビューポートの高さいっぱいまで拡張 */
+}
+
+.video-container{
+    display: flex;
+    justify-content: center; /* 動画を水平方向に中央に配置 */
+    align-items: center; /* 動画を垂直方向に中央に配置 */
+    height: 30vh; /* 親要素の高さを画面の高さいっぱいに設定（オプション） */
+}
+
+.video-good{
+    max-width: 60%; /* 動画の最大幅を親要素の幅に合わせる */
+    height: auto; /* 高さを自動調整してアスペクト比を保つ */
+}
+
+.video-bad{
+    max-width: 60%; /* 動画の最大幅を親要素の幅に合わせる */
+    height: auto; /* 高さを自動調整してアスペクト比を保つ */
+}
+    

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんアプリ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="gameTitle">じゃんけんゲーム</h1>
+        <!-- じゃんけんのタグ -->
+    <div class="button-container">
+        <button class="rock" >グー</button>
+        <button class="paper">チョキ</button>
+        <button class="scissors">パー</button>
+    </div>
+
+   
+
+        <div class="pics">
+            <!-- 画像を配置 -->
+            <!-- 背景 -->
+            <img class="bg-pic" src="js_kadai/img/tv.jpg" alt="">
+           <!-- 上に配置 -->
+           <div class="pic-container">
+            <img class="pic" src="js_kadai/img/janken.jpg" alt=""> 
+           </div>
+                
+        </div>
+         <!-- 結果 -->
+         <div class="result"></div>
+
+         
+
+        <!-- 動画 -->
+        <div class="video-container">
+            <video class="video-good" src="video/good.mp4" style="display: none;"></video>
+            <video class="video-bad" src="video/bad.MP4" style="display: none;"></video>
+        </div>
+
+       
+
+         <div class="button-container-right">
+            <a href="next.html"><button  class="nextButton" >次へ進む</button></a>
+            
+            <button class="resetButton">リセット</button>
+         </div>
+         
+        
+
+        <!-- 音声 -->
+        <audio class="audio" src="audio/audio_janken.mp3" autoplay></audio>
+
+
+
+        <!-- jQueryのjsのコードを先に読み込む -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       
+        <!-- jsを紐づける -->
+        <script src="js_kadai/kadai.js"></script>
+</body>
+</html>
